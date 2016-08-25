@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>页面访问错误</title>
+<link rel="stylesheet" type="text/css" href="/static/css/public.css?v=0.0.1" />
+<link rel="stylesheet" type="text/css" href="/static/css/content.css?v=0.0.1" />
+<style type="text/css">
+	@media ( min-width : 550px) and (max-width: 650px) {
+		.cf-error-in {
+			width: 580px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.errorimg {
+			margin-top: 10px;
+		}
+		.cf-error-tip {
+			margin-bottom: 0;
+		}
+	}
+</style>
+</head>
+<body>
+<div class="cf-error bg_wrap">
+<div class="cf-error-in">
+	<span class="errorimg"></span>
+	<p class="cf-error-p">哎呀......您访问的页面不存在</p>
+	<p class="cf-error-go">
+		<a class="left"><em class="cf-error-icon1"></em>返回首页</a>
+		<a class="right"><em class="cf-error-icon2"></em>项目列表</a>
+	</p>
+	<p class="cf-error-tip">温馨提示-您可能输错了网址，或该网页已删除，请重新查找所需网页</p>
+</div>
+</div>
+<script type="text/javascript" src="/static/js/common/jquery/jquery.js"></script>
+<script type="text/javascript">
+	
+	$(".cf-error-go .left").click(function(){
+		top.location.href="/";
+	});
+	$(".cf-error-go .right").click(function(){
+		top.location.href="/project/";
+	});
+	
+</script>
+</body>
+</html>

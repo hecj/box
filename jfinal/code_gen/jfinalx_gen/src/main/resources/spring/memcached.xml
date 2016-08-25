@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	
+		<bean id="memCachedPool" class="com.whalin.MemCached.SockIOPool" factory-method="getInstance" init-method="initialize" destroy-method="shutDown">
+		<constructor-arg>
+			<value>memCachedPool</value>
+		</constructor-arg>
+		<property name="servers">
+			<list>
+				<value>127.0.0.1:11211</value>
+			</list>
+		</property>
+		<property name="initConn">
+             <value>20</value>
+         </property>
+         
+         <property name="minConn">
+             <value>10</value>
+         </property>
+ 
+         <property name="maxConn">
+             <value>50</value>
+         </property>
+ 
+         <property name="maintSleep">
+             <value>3000</value>
+         </property>
+ 
+         <property name="nagle">
+             <value>false</value>
+         </property>
+ 
+         <property name="socketTO">
+             <value>3000</value>
+         </property>
+	</bean>
+	<bean id="memCachedClient" class="com.whalin.MemCached.MemCachedClient">
+		<constructor-arg>
+			<value>memCachedPool</value>
+		</constructor-arg>
+	</bean>
+
+
+</beans>

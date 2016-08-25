@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="freemarker-2.3.16">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/codeGenModel/lib/freemarker-2.3.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeGenModel/lib/velocity-1.7-dep.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

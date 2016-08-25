@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>文件上传示例</title>
+        <link type="text/css" rel="stylesheet" href="css/css.css"/>
+        <link type="text/css" rel="stylesheet" href="css/jquery.tool.css"/>
+        <link type="text/css" rel="stylesheet" href="css/smartMenu.css"/>
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script>
+        	function back(prefix,type,msg){
+        		if(type<0){
+        			alert("上传失败,"+msg);
+        		}
+        		if(type>0){
+        			if(prefix=="img"){
+	        			jQuery("#img").attr("src",msg);
+        			}
+        			if(prefix=="file"){
+	        			alert(msg);
+        			}
+        		}
+        	}
+        </script>
+ 	</head>
+ 	<body>
+	 	<h1>文件上传示例</h1>
+	 	<form action="/upFile" enctype="multipart/form-data" method="post" target="bak">
+	 		<input type="file" name="imgFile">
+	 		<input type="submit" value="上传">
+	 	</form>
+	 	<img id="img" src="">
+	 	<br>
+	 	<iframe style="display: none;" name="bak"></iframe>
+    </body>
+</html>

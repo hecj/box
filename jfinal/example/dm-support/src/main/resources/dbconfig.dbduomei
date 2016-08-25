@@ -1,0 +1,4 @@
+jdbcUrl = jdbc:mysql://db.duomeidai.com:3306/dm_support?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+user = root
+password = dmtz@2014
+devMode = true

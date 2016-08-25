@@ -1,0 +1,4 @@
+jdbcUrl = jdbc:mysql://db.boxamazing.com:3306/dm_support?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+user = dmsupport
+password = dmsupport
+devMode = true

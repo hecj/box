@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd"> 
+          
+    <diskStore path="java.io.tmpdir"/>   
+    <!-- 
+          默认缓存策略
+     maxElementsInMemory cache 中最多可以存放的元素的数量 
+    -->
+    <defaultCache
+        maxElementsInMemory="10000"
+        eternal="true"
+        timeToIdleSeconds="120"
+        timeToLiveSeconds="120"
+        overflowToDisk="true"
+    />
+
+	<cache name="constant_cache"  
+           maxElementsInMemory="10000"  
+           maxElementsOnDisk="1000"  
+           eternal="true"  
+           overflowToDisk="true"  
+           diskSpoolBufferSizeMB="20"  
+           timeToIdleSeconds="120"  
+           timeToLiveSeconds="120"  
+           memoryStoreEvictionPolicy="LFU"  
+           transactionalMode="off"  
+            /> 
+
+</ehcache>

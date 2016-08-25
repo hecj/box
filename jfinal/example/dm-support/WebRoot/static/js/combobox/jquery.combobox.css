@@ -1,0 +1,70 @@
+/******* modify at your own risk *********/
+.diapol_combobox
+{
+    display: inline;
+    padding:0;
+    font-size :13px;  
+}
+
+.diapol_combobox input
+{
+	height: 18px;
+	padding: 1px 0 0 5px;
+	width: 154px;
+	border-width:1px 0 1px 1px;
+	border-color:#7F9DB9;
+	border-style:solid none solid solid;
+
+}
+
+.diapol_combobox .button
+{
+	border-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline;
+	vertical-align: bottom;
+	border-left-color:buttonface;
+	background-repeat:no-repeat;
+	width:21px;
+	
+}
+
+#diapol_comboboxDropdown
+{
+	margin: 0;
+	padding: 0;
+	border: solid 1px #ccc;
+	border-width: 1px 1px 0;
+	position: absolute;
+	display: none;
+	z-index: 1001;
+	overflow-y:auto;
+	overflow-x:hidden;
+	max-height:105px;
+
+}
+
+#diapol_comboboxDropdown li
+{
+	
+
+    padding: 0 3px 0 2px;
+    white-space:nowrap;
+    width:100%;
+    font-size:12px;
+    cursor: pointer;
+}
+
+/******* modify this to custom the appearance of the suggestions *******/
+#diapol_comboboxDropdown li
+{
+    color: black;
+    background-color: white;
+}
+
+#diapol_comboboxDropdown li.selected
+{
+    color: white;
+    background-color: #3399ff;
+}

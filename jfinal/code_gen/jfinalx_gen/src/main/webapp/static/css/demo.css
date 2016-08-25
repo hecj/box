@@ -1,0 +1,32 @@
+@charset utf-8;
+.top_{
+	font-size:12px;
+}
+table td,form{
+	
+	border: 1px solid #bbf;
+}
+.form_title{
+	display:inline-block;
+	width: 100px;
+	overflow: hide;
+}
+
+
+
+#弹窗部分样式
+
+/*tip*/
+.tip,.mesWindow{width:485px; min-height:260px; position:absolute;top:10%; left:30%;background:#fcfdfd;box-shadow:1px 8px 10px 1px #9b9b9b;border-radius:1px;behavior:url(js/pie.htc); display:none; z-index:111111;}
+.tiptop{display:block;height:40px; line-height:40px; background:url(../images/tcbg.gif)  repeat-x; cursor:pointer;}
+.tiptop span{font-size:14px; font-weight:bold; color:#fff;float:left; text-indent:20px;}
+.tiptop a{display:block; background:url(../images/close.png) no-repeat; width:22px; height:22px;float:right;margin-right:7px; margin-top:10px; cursor:pointer;}
+.tiptop a:hover{background:url(../images/close1.png) no-repeat;}
+.tipinfo{padding-top:30px;margin-left:65px; height:95px;}
+.tipinfo span{width:95px; height:95px;float:left;}
+.tipright{float:left;padding-top:15px; padding-left:10px;}
+.tipright p{font-size:14px; font-weight:bold; line-height:35px;}
+.tipright cite{color:#858686;}
+.tipbtn{margin-left:60px;margin-right:60px;margin-top:25px; margin-bottom: 20px;}
+.sure ,.cancel{display:inline-block;margin-left:20px;text-align: center;width:96px; height:35px; line-height:35px; color:#fff; background:url(../images/btnbg1.png) repeat-x; font-size:14px; font-weight:bold;border-radius: 3px; cursor:pointer;}
+.cancel{background:url(../images/btnbg2.png) repeat-x;color:#000;font-weight:normal;}

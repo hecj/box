@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xmlns:aop="http://www.springframework.org/schema/aop"  
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+
+	
+	<!-- 公共信息，也可以用dubbo.properties配置 -->
+	<dubbo:application name="annotation-provider" />
+	
+	<dubbo:registry protocol="zookeeper" address="zoo.duomeidai.com:2181" client="zkclient"/>
+	 
+	<dubbo:protocol name="dubbo" port="20880" />  
+	
+	
+	
+	<!-- 扫描注解包路径，多个包用逗号分隔，不填pacakge表示扫描当前ApplicationContext中所有的类 -->
+	<dubbo:annotation package="com.demo.test" />
+	<!-- 对于具体实体的注入处理器 -->
+	
+	<!-- <aop:aspectj-autoproxy proxy-target-class="true"/>  
+	
+	事务控制
+	<bean class="com.demo.test.service.aop.TxAop">
+		<property name="openTx">
+			<value>true</value>
+		</property>
+	</bean> 
+	
+	缓存控制
+	<bean class="com.demo.test.service.aop.CacheAop">
+		<property name="openCache">
+			<value>true</value>
+		</property>
+	</bean> -->
+	
+
+	
+
+ 	  
+
+</beans>

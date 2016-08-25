@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*css reset css初始化*/
+body{
+	font:12px/1.25 "Microsoft YaHei","微软雅黑",Arial,Helvetica,sans-serif,SimSun,Tahoma; color:#fff;
+}
+body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, th, td, blockquote, pre, p, form, fieldset, legend, input, button, textarea, hr{
+	margin:0; 
+	padding:0; 
+	word-break:break-all;
+}
+input, button, textarea, select{
+	font-family:"Microsoft YaHei"; 
+	border: 0; 
+	outline: none; /*去掉谷歌 360等表单的蓝色边框*/ 
+}
+textarea{
+	resize:none; /*防止谷歌等浏览器 textarea 可以拖动*/
+	word-break: break-all;
+	word-wrap: break-all;
+	resize: none;
+}
+input, textarea{
+	font-size: 12px;
+	color: #fff;
+	outline-style:none;
+}
+input[type="text"], input[type="password"], textarea{
+	outline-style: none;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	    -ms-appearance: none;
+	   		appearance: none;
+}
+input[type="checkbox"]{
+	-webkit-appearance: checkbox;
+	   -moz-appearance: none;
+	    -ms-appearance: none;	   
+	   		appearance: checkbox;	
+}
+ol, ul{
+	list-style:none;
+}
+ul li{
+	list-style: outside none none;
+}
+h1, h2, h3, h4, h5, h6{ 
+	font-size:100%; 
+	font-weight:normal; /*初始化标题*/
+}
+fieldset, img{
+	border:0; 
+	display:block; /*防止图片底下3像素的空白缝隙 */
+}
+q:before,
+q:after{content:'';}
+address, caption, cite, code, dfn, em, i, th, var{
+	font-style:normal;
+	font-weight:normal;
+}
+abbr, acronym{
+	border:0;
+	font-variant:normal;
+}
+button{
+	cursor: pointer;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+	blr: expression(this.onFocus=this.blur());
+	transition: background 0.2s ease 0s, color 0.2s ease 0s;
+}
+a:hover, a:focus{
+	outline:none;
+	text-decoration: none;
+}
+a:active{
+	color:#fff;
+}
+.clearfix:before, .clearfix:after{
+	content:"";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+.clearfix{
+	*zoom:1;/*ie6,7*/
+}
+*,*::before,*::after{
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	    -ms-box-sizing:border-box;
+	        box-sizing:border-box;
+}
+/*---------------------------------------------隔开线--------------------------------------------------------------*/
+/* 公共类 */
+html{-webkit-text-size-adjust:none;}
+.marginC{margin:0 auto;}
+.floatL{float:left;}
+.floatR{float:right;}
+.clearB{clear:both;}
+.posint{position:relative;}
+.show{display:block;}
+.hidden{display:none;}
+.w_public{width:100%;}
+.h_public{height:100%;overflow:hidden;}
+
+.w{width:1000px;height:auto;margin:0px auto;}
+.nowrap{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.boxshadow{box-shadow:0 0 5px #dfdfdf;}
+.borfg{height:1px;background:#fff;border-top:1px solid #ddd;}
+.bortop{border-top:1px solid #ddd;}
+.corblue{color:#00aaf0;}
+.corred{color:#f30000;}
+.coryellw{color:#f5a623;}
+
+.cursor_pointer{cursor:pointer;}
+.bacgundf{background:#fff;}
+.marbot30{margin-bottom:30px;}
+.marbot20{margin-bottom:20px;}
+.marbot10{margin-bottom:10px;}
+
+	/* 渐变色进度条 */
+.pro-221{
+	width: 221px;
+	height: 1px;
+	background-color: #3f3f3f;
+}
+.pro-reach-221{
+	width: 80%;  /* 可调节 */
+	height: 1px;
+	background: url(../images/progress-bar-1.png) no-repeat;
+}
+.circle-7{
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background:url(../images/progress-bar-7.png) no-repeat;
+	background-position: 80% 0;  /* 可调节 */
+	float: right;
+	margin-right: -3px;
+	margin-top: -3px;
+	behavior: url(ie-css3.htc);
+}
+.pro-252{
+	width: 252px;
+	height: 2px;
+	background-color: #a9a9a9;
+}
+.pro-reach-252{
+	width: 80%;  /* 可调节 */
+	height: 2px;
+	background: url(../images/progress-bar/progress-bar-252-2.png) no-repeat;
+	position: relative;
+}
+.circle-8{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background:url(../images/progress-bar/progress-bar-252-9.png) no-repeat;
+	background-position: 80% 0;  /* 可调节 */
+/* 	float: right;
+  	margin-right: -3px;
+	margin-top: -3px;
+*/	behavior: url(ie-css3.htc);
+	position: absolute;
+	z-index: 3;
+	top: -3px;
+	right: -3px;
+}
+	/* 弹窗公共样式 */
+.popup{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1000%;
+	/* padding: 15px; */
+	/* background: url(images/zt-qmxf/blackpngbg.png) no-repeat; */
+	z-index: 999;
+}
+.popup-in{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	margin: 18% auto 0;
+	overflow: hidden;
+}
+	/*悬浮导航*/
+.suspension-square{
+	width: 10px;
+	height: 10px;
+	position: fixed;
+	right: 0;
+	top: 48%;
+	z-index: 100;
+}
+.suspension{
+	position: absolute;
+	right: 0;
+	top: -2500%;
+	/* width: 152px; */
+	/* height: 289px; */
+	/* padding-top: 229px; */
+	/* background: url(images/znq-bg/titler-bg.png) no-repeat; */
+	overflow: hidden;
+	z-index: 100;
+}
+/*-----------------------------------------------隔开线------------------------------------------------------------*/
+.f-s-12{font-size: 12px;}

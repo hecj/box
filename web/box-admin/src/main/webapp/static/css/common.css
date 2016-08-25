@@ -1,0 +1,40 @@
+﻿@charset "utf-8";
+
+.tip_icon_normal{
+	width: 95px;
+	height: 95px;
+}
+.tip_icon_smile{
+	width: 32px;
+	height: 32px;
+}
+.tip_icon_tiny{
+	width: 16px;
+	height: 16px;
+}
+.marginL10{
+	margin-left:10px; 	
+}
+.marginR10{
+	margin-right:10px; 	
+}
+.tip_icon_warn1{
+	background-image: url("../image/warn1.png");
+	background-repeat: round;
+	 background-size: contain;
+}
+.tip_icon_ok1{
+	background-image: url("../image/ok1.png");
+	background-repeat: round;
+	 background-size: contain;
+}
+.tip_icon_edit1{
+	background-image: url("../image/edit1.png");
+	background-repeat: round;
+	 background-size: contain;
+}
+.tip_icon_error1{
+	background-image: url("../image/error1.png");
+	background-repeat: round;
+	 background-size: contain;
+}

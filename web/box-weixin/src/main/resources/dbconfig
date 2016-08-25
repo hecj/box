@@ -1,0 +1,4 @@
+jdbcUrl = jdbc:mysql://114.66.196.203:3306/box?useUnicode=true&amp;characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+user = root
+password = dxdiag
+devMode = true
